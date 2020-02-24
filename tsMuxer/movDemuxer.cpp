@@ -836,7 +836,7 @@ int MovDemuxer::mov_read_default(MOVAtom atom)
 
         if (m_curPos >= m_bufEnd)
         {
-            m_curPos = m_bufEnd;
+            m_curPos = m_bufEnd - 1;
             m_isEOF = true;
         }
     }
